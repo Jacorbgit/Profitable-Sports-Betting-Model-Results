@@ -1,2 +1,7 @@
 # Profitable-Sports-Betting-Model-Results
 This repo shows the results/profitability of a sports betting model I made in R and Python. In this repo I show the end results of using a machine learning algorithm (namely a random forest) to generate game win probabilities and exploit those probabilities to place long-term profitable moneyline wagers (known as positive EV betting). In this repo I show validity and trustworthiness of the algorithm through A) analysis of the random forest outputs as well as B) repeated backtesting on real sportsbooks odds to conirm that the model is indeed profitable. Please note that this repo shows THE RESULTS of the model NOT THE FEATURE ENGINEERING PROCESS. All of the analysis and backtesting was performed on a randomly selected 20% subset (test data) of the entire dataset with the remaining 80% (training data) being used to train the model. All feature engineering processes generated lagged variables for inputs to prevent data leakage (meaning all inputs used in the model will be available when it is time to make real predictions.  
+
+## Explanation of Files:
+
+### Model_training.py
+This is a python code chunk showing the the spliting of the dataset into train and test sets. 20%  of the data was used for a test set where all validation/backtesting was done while the remaining 80% was used to train the random forest. Hyperparameters of the random forest are not disclosed. 
