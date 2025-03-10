@@ -1,6 +1,8 @@
 from matplotlib.colors import ListedColormap
 
 
+
+#=============================================================================== Plot generating code
 y_1 = x_test_
 x_1 = model_fitted_calibrated
 
@@ -46,9 +48,10 @@ plt.ylim(0,1)
 
 plt.axis('equal')
 # Show the plot
-#===============================================
+#===============================================================================
 plt.show()
 
+#===============================================================================  Profit-testing begins here
 df = pd.DataFrame({
     'model_predicted_prob': x_1,
     'pinnacle_implied_probability': y_1,
